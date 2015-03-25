@@ -1,3 +1,4 @@
+$(document).ready(function() {
 	$('.letter').each(function() {
 		// grab our trueletter container
 		var trueletter = $(this).find('.trueletter');
@@ -28,3 +29,4 @@
 			counter++;
 		}, 10);	
 	});
+});
