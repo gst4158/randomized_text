@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+<head runat="server">
+	
+  	<meta charset="utf-8">
+	<title>Randomized Text</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+
+	<!-- LOADING MODERNIZR AND SCRIPT.JS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="script.js"></script>
+	
+    <script>
+	$(document).ready(function() {
+		$('.letter').each(function() {
+			// grab our trueletter container
+			var trueletter = $(this).find('.trueletter');
+		
+			// clone trueletter container and do some CSS/Class stuff to it
+			$(trueletter).css('display','none').clone().insertAfter(trueletter).removeClass('trueletter').addClass('randomletter').css('display','block');
+		
+			// set all other vars we'll use
+			var randomletter = $(this).find('.randomletter');
+			var counter = 0;
+			var interval = 0;
+			var interval = Math.floor(Math.random()*(200-100+1)+100); // max 150 and min 100
+
+			// interval function to run through our loop
+			// randomizes our letter before hiding it and showing our true letter
+			var randomize = setInterval(function() {
+				//randomize the letter
+				var rand = String.fromCharCode((Math.random() * 50) + 43);
+				$(randomletter).text(rand);
+	
+				// stop loop with conditional
+				if( counter >= interval ) {
+					clearInterval(randomize);
+					randomize = 0;
+					$(randomletter).css('display','none');
+					$(trueletter).css('display','block');
+				};
+				counter++;
+			}, 10);	
+		});
+	});
+	</script>
+
+
+<style>
+ #cover div div {
+	display: inline-block; 
+ }
+</style>
+
+</head> 
+
+<body>
+<section>
+	<div>
+		<div class="letter"><span class="trueletter">G</span></div>
+		<div class="letter"><span class="trueletter">R</span></div>
+		<div class="letter"><span class="trueletter">U</span></div>
+		<div class="letter"><span class="trueletter">M</span></div>
+		<div class="letter"><span class="trueletter">P</span></div>
+		<div class="letter"><span class="trueletter">Y</span></div>
+        </div>
+</section>
+
+</body>
+</html>
