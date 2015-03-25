@@ -23,9 +23,13 @@ How does it work?
 * Each iteration of the $('letters') selector is ran through the randomization script.
 
 * Each element with a class of 'trueletter' is cloned.
+
 * The cloned element has the 'trueletter' class removed.
+
 * The 'randomletter' class is added
+
 * The cloned element's CSS is set to display: block.
+
 * The cloned element is set as a variable so we can do stuff to it.
 
 * A random interval variable is created with a max number of 200, and a minimum of 100.
