@@ -2,14 +2,16 @@
 Takes a selector, randomizes the value for a random interval, hides the random value, and reveals the true value afterwards.
 
 HTML USE:
-		<div>
-			<div class="letter"><span class="trueletter">G</span></div>
-			<div class="letter"><span class="trueletter">R</span></div>
-			<div class="letter"><span class="trueletter">U</span></div>
-			<div class="letter"><span class="trueletter">M</span></div>
-			<div class="letter"><span class="trueletter">P</span></div>
-			<div class="letter"><span class="trueletter">Y</span></div>
+<pre>
+	<div>
+		<div class="letter"><span class="trueletter">G</span></div>
+		<div class="letter"><span class="trueletter">R</span></div>
+		<div class="letter"><span class="trueletter">U</span></div>
+		<div class="letter"><span class="trueletter">M</span></div>
+		<div class="letter"><span class="trueletter">P</span></div>
+		<div class="letter"><span class="trueletter">Y</span></div>
     </div>
+</pre>
     
 jQuery USE:
   $('.letter').each(function() {
