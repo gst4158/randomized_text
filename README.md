@@ -5,7 +5,7 @@
 
 ***
 
-### [→ Demo ←](http://google.com)
+### [→ Demo ←](https://github.com/gst4158/randomized_text/blob/master/demo.html)
 
 ***
 
