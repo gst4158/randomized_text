@@ -19,11 +19,13 @@ Detailed Explaination
 
 How does it work? 
 
-* Wrap letters in any container you want with the 'letters' class.
+* Hooking int othe 'letters' selector we use jQuery to go through each iteration and randomize the letter/text.
 
-* This will hook into jQuery and clone that element.
+* Our element is then cloned, removes the 'trueletter' class, adds the 'randomletter' class, and sets the clonned element to display: block. We set this cloned element as a variable so we can do stuff to it.
 
-* jQuery takes the cloned element and starts randomizing it by a random interval (min of 100 and max of 200 in this demo). 
+* Needing a time limit to randomize the text, a random interval is created with a max number of 200, and a minimum of 100.
 
-* Once the counter reaches higher than the interval, the randonized letter is hidden, and our true letter is revealed.
+* Using a setInterval loop the 'randomletter' element has its text value randomly changed into letters, numbers, and symbols.
+
+* Once the counter is greater or equal to the interval, the loop stops. The randomization is killed and hidden from view; and the 'trueletter' element has it's display set back to block.
 
