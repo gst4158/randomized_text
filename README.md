@@ -16,10 +16,11 @@ Simple copy/paste the index.html and script.js files into the same folder to see
 
 Detailed Explaination
 -----------
+**This will only work on single letters. Any words will be hidden from view while randomization animation is going on.**
 
 How does it work? 
 
-* Hooking int othe 'letters' selector we use jQuery to go through each iteration and randomize the letter/text.
+* Hooking int othe 'letters' selector we use jQuery to go through each iteration and randomize the letter.
 
 * Our element is then cloned, removes the 'trueletter' class, adds the 'randomletter' class, and sets the clonned element to display: block. We set this cloned element as a variable so we can do stuff to it.
 
