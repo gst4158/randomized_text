@@ -5,8 +5,8 @@
 
 ***
 
-### [→ Demo ←](https://github.com/gst4158/randomized_text/blob/master/demo.html)
-
+### [→ CodePen Demo ←](http://codepen.io/anon/pen/MYLOre)
+### [→ Demo File ←](https://github.com/gst4158/randomized_text/blob/master/demo.html)
 ***
 
 Installation
