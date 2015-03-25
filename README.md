@@ -1,7 +1,7 @@
 # Randomize Text
  [![License](http://img.shields.io/badge/License-MIT-blue.svg)](http://opensource.org/licenses/MIT)
 
-### Takes a selector, randomizes the value for a random interval, hides the random value, and reveals the true value afterwards.
+### Takes a selector, randomizes the value for a random interval before revealing the original value.
 
 ***
 
