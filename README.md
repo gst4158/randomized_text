@@ -22,7 +22,9 @@ How does it work?
 
 * Each iteration of the $('letters') selector is ran through the randomization script.
 
-* Each element with a class of 'trueletter' is cloned.
+* Each element with a class of 'trueletter' has it's CSS set to display: none.
+
+* All 'trueletter' elements are then cloned.
 
 * The cloned element has the 'trueletter' class removed and the 'randomletter' class added.
 
