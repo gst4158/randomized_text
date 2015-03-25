@@ -3,10 +3,6 @@
 
 ### Takes a selector, randomizes the value for a random interval, hides the random value, and reveals the true value afterwards.
 
- - Developed for modern browsers
- - **3.2KB** minified and Gzipped
- - An open-source project by [Julian Lloyd](https://twitter.com/julianlloyd)
-
 ***
 
 ### [→ Demo ←](http://google.com)
