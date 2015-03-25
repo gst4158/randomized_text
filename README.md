@@ -24,9 +24,7 @@ How does it work?
 
 * Each element with a class of 'trueletter' is cloned.
 
-* The cloned element has the 'trueletter' class removed.
-
-* The 'randomletter' class is added
+* The cloned element has the 'trueletter' class removed and the 'randomletter' class added.
 
 * The cloned element's CSS is set to display: block.
 
